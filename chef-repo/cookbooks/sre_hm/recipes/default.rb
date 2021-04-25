@@ -35,7 +35,7 @@ node_exporter 'main' do
   action [:enable, :start]
 end
 
-node.override['prometheus-platform']'components']['prometheus']['config']['scrape_configs'] =     {
+node.override['prometheus-platform']['components']['prometheus']['config']['scrape_configs'] =     {
   'job_name' => 'node',
   'scrape_interval' => '15s',
   'static_configs' => {
