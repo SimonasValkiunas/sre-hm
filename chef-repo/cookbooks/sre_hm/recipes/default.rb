@@ -24,27 +24,33 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-# check if recipe has started, remove later
-
+# install prometheus
 node.override['prometheus-platform']['components']['prometheus']['install?'] = true
+# install node_exporter
+node.override['prometheus-platform']['components']['node_exporter']['install?'] = true
 
+# configures node exported to listen on 9100 port
 listen_ip = '127.0.0.1'
-
 node_exporter 'main' do
   web_listen_address "#{listen_ip}:9100"
   action [:enable, :start]
 end
 
-node.override['prometheus-platform']['components']['prometheus']['config']['scrape_configs'] =     {
-  'job_name' => 'node',
-  'scrape_interval' => '15s',
-  'static_configs' => {
-    'index_1' => {
-      'targets' => ['localhost:9100']
+# configures prometheus to scrape data from node exporter
+node.override['prometheus-platform']['components']['prometheus']['config']['scrape_configs'] = {
+  'index_1' =>
+  {
+    'job_name' => 'node',
+    'scrape_interval' => '15s',
+    'static_configs' => {
+      'index_1' => {
+        'targets' => ['localhost:9100']
+      }
     }
   }
 }
 
+# include necessary recipes
 include_recipe 'prometheus-platform::default'
 include_recipe 'prometheus_exporters::node'
 
