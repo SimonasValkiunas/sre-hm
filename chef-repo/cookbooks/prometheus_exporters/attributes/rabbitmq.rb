@@ -1,0 +1,21 @@
+default['prometheus_exporters']['rabbitmq']['version'] = '1.0.0-RC7'
+default['prometheus_exporters']['rabbitmq']['url'] = "https://github.com/kbudde/rabbitmq_exporter/releases/download/v#{node['prometheus_exporters']['rabbitmq']['version']}/rabbitmq_exporter-#{node['prometheus_exporters']['rabbitmq']['version']}.linux-amd64.tar.gz"
+default['prometheus_exporters']['rabbitmq']['checksum'] = '2c7fee81884a94ac81cb1116094755de084e2e949c07a115394fecfc415487e9'
+
+default['prometheus_exporters']['rabbitmq']['exclude_metrics'] = ''
+default['prometheus_exporters']['rabbitmq']['include_queues'] = '.*'
+default['prometheus_exporters']['rabbitmq']['include_vhost'] = '.*'
+default['prometheus_exporters']['rabbitmq']['log_level'] = 'info'
+default['prometheus_exporters']['rabbitmq']['max_queues'] = 0
+default['prometheus_exporters']['rabbitmq']['output_format'] = 'TTY'
+default['prometheus_exporters']['rabbitmq']['publish_addr'] = ''
+default['prometheus_exporters']['rabbitmq']['publish_port'] = 9419
+default['prometheus_exporters']['rabbitmq']['rabbit_capabilities'] = 'bert,no_sort'
+default['prometheus_exporters']['rabbitmq']['rabbit_exporters'] = 'exchange,node,overview,queue'
+default['prometheus_exporters']['rabbitmq']['rabbit_password'] = 'guest'
+default['prometheus_exporters']['rabbitmq']['rabbit_url'] = 'http://127.0.0.1:15672'
+default['prometheus_exporters']['rabbitmq']['rabbit_user'] = 'guest'
+default['prometheus_exporters']['rabbitmq']['skip_queues'] = '^$'
+default['prometheus_exporters']['rabbitmq']['skip_vhost'] = '^$'
+default['prometheus_exporters']['rabbitmq']['skipverify'] = false
+default['prometheus_exporters']['rabbitmq']['user'] = 'root'

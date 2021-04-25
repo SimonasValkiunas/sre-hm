@@ -1,0 +1,180 @@
+{
+  "revision_id": "343affaf5c7b4c5a7d73057f79fa2596515b76919b7a4d724d7cf72557eef970",
+  "name": "Policyfile",
+  "run_list": [
+    "recipe[sre_hm::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "ark": {
+      "version": "5.1.0",
+      "identifier": "f0275bc430d8efcabe2bec6333a1492824e1c2d4",
+      "dotted_decimal_identifier": "67597269497600239.57067041154347937.80436766294740",
+      "cache_key": "ark-5.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/5.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/5.1.0/download",
+        "version": "5.1.0"
+      }
+    },
+    "cluster-search": {
+      "version": "1.6.0",
+      "identifier": "3c9c591c23bb92a3cbbe27860bb9004663e33a6e",
+      "dotted_decimal_identifier": "17060405140765586.46104438771157945.302323546734",
+      "cache_key": "cluster-search-1.6.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cluster-search/versions/1.6.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cluster-search/versions/1.6.0/download",
+        "version": "1.6.0"
+      }
+    },
+    "prometheus-platform": {
+      "version": "2.2.0",
+      "identifier": "fd5b99bef59480bee8477f980c468afbcbbbeed3",
+      "dotted_decimal_identifier": "71313884999685248.53735639356017734.152814059515603",
+      "cache_key": "prometheus-platform-2.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/prometheus-platform/versions/2.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/prometheus-platform/versions/2.2.0/download",
+        "version": "2.2.0"
+      }
+    },
+    "prometheus_exporters": {
+      "version": "0.17.2",
+      "identifier": "a6f0c28a41828dceafaee74422940a018a8b8b85",
+      "dotted_decimal_identifier": "46989564467839629.58177010941567636.11001735646085",
+      "cache_key": "prometheus_exporters-0.17.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/prometheus_exporters/versions/0.17.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/prometheus_exporters/versions/0.17.2/download",
+        "version": "0.17.2"
+      }
+    },
+    "seven_zip": {
+      "version": "3.2.0",
+      "identifier": "d374d8fece863d7e18d17afdceb5a5f28db7ca76",
+      "dotted_decimal_identifier": "59519695422654013.35493135056228021.182461178301046",
+      "cache_key": "seven_zip-3.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/3.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/3.2.0/download",
+        "version": "3.2.0"
+      }
+    },
+    "sre_hm": {
+      "version": "1.0.0",
+      "identifier": "b2216c65bc22917375d46b04ca4fb954ddea53f7",
+      "dotted_decimal_identifier": "50139295301509777.32499177510718031.203774151513079",
+      "source": "../cookbooks/sre_hm",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/sre-hw/sre-hw-SimonasValkiunas",
+        "revision": "0bc47deb59c6883d675f3814c360a313b0acd281",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/sre_hm"
+      }
+    },
+    "windows": {
+      "version": "7.0.2",
+      "identifier": "d30610e83214a12feb3f8c2fe67d24ff7f42fa8e",
+      "dotted_decimal_identifier": "59397889770788001.13487982072817277.40679770356366",
+      "cache_key": "windows-7.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/7.0.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/7.0.2/download",
+        "version": "7.0.2"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "ark",
+        "= 5.1.0"
+      ],
+      [
+        "cluster-search",
+        "= 1.6.0"
+      ],
+      [
+        "prometheus-platform",
+        "= 2.2.0"
+      ],
+      [
+        "prometheus_exporters",
+        "= 0.17.2"
+      ],
+      [
+        "seven_zip",
+        "= 3.2.0"
+      ],
+      [
+        "sre_hm",
+        ">= 0.0.0"
+      ],
+      [
+        "windows",
+        "= 7.0.2"
+      ]
+    ],
+    "dependencies": {
+      "ark (5.1.0)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ]
+      ],
+      "cluster-search (1.6.0)": [
+
+      ],
+      "prometheus-platform (2.2.0)": [
+        [
+          "cluster-search",
+          ">= 0.0.0"
+        ],
+        [
+          "ark",
+          ">= 0.0.0"
+        ]
+      ],
+      "prometheus_exporters (0.17.2)": [
+
+      ],
+      "seven_zip (3.2.0)": [
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
+      "sre_hm (1.0.0)": [
+        [
+          "prometheus_exporters",
+          ">= 0.17.2"
+        ],
+        [
+          "prometheus-platform",
+          "~> 2.2.0"
+        ]
+      ],
+      "windows (7.0.2)": [
+
+      ]
+    }
+  }
+}

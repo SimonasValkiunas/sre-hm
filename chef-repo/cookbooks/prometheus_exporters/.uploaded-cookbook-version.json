@@ -1,0 +1,361 @@
+{
+  "all_files": [
+    {
+      "name": "root_files/README.md",
+      "path": "README.md",
+      "checksum": "226c5ed1a0bf0be5d442b4f85edcfce0",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/CHANGELOG.md",
+      "path": "CHANGELOG.md",
+      "checksum": "8ab2c374a9a073871a44c659f238f563",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/CONTRIBUTING.md",
+      "path": "CONTRIBUTING.md",
+      "checksum": "bb8528280868e649189dec551fa8dcd4",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/metadata.json",
+      "path": "metadata.json",
+      "checksum": "c361ee991f80b11c9b528ac374093170",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/metadata.rb",
+      "path": "metadata.rb",
+      "checksum": "dc23cf82edc34876147987ecdfab6075",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/apache.rb",
+      "path": "attributes/apache.rb",
+      "checksum": "c4a672e597d1742bee6c40e4889d10cb",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/blackbox.rb",
+      "path": "attributes/blackbox.rb",
+      "checksum": "f2371e7248e37249558233a11b440a30",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/consul.rb",
+      "path": "attributes/consul.rb",
+      "checksum": "78aedd8f681f13de4d2591ed42eb65cd",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/default.rb",
+      "path": "attributes/default.rb",
+      "checksum": "312d79675f176efec159264f9ac48ca9",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/elasticsearch.rb",
+      "path": "attributes/elasticsearch.rb",
+      "checksum": "cb12bc260a0f2dda95a7bf136cec37dc",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/haproxy.rb",
+      "path": "attributes/haproxy.rb",
+      "checksum": "bd3276cbd1277fe078ac916da22c93f5",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/mongodb.rb",
+      "path": "attributes/mongodb.rb",
+      "checksum": "2754cc34532f0dcf28ed72ede01739b2",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/mysqld.rb",
+      "path": "attributes/mysqld.rb",
+      "checksum": "534311e554656f06d77ab25fc04cfe91",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/node.rb",
+      "path": "attributes/node.rb",
+      "checksum": "8c22cdb7ec459a34813977b7d4c5f83d",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/postgres.rb",
+      "path": "attributes/postgres.rb",
+      "checksum": "1c85fe04dab3347306b2e4400603feb6",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/process.rb",
+      "path": "attributes/process.rb",
+      "checksum": "23d72e1eb42b64d4ab0dca77d04e7daa",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/rabbitmq.rb",
+      "path": "attributes/rabbitmq.rb",
+      "checksum": "272db9422a72d483fe4ed9290161dbb2",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/redis.rb",
+      "path": "attributes/redis.rb",
+      "checksum": "99d79028e8743af823fb28b38c736c7f",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/snmp.rb",
+      "path": "attributes/snmp.rb",
+      "checksum": "2e6e9886d3551b067a1048762021108e",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/statsd.rb",
+      "path": "attributes/statsd.rb",
+      "checksum": "3c3eb6d606b43b0eeec5e6b92ad59ff0",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/varnish.rb",
+      "path": "attributes/varnish.rb",
+      "checksum": "ba4ce4336301dffce3313b4b57e49eb9",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/wmi.rb",
+      "path": "attributes/wmi.rb",
+      "checksum": "2d6aa501092fb4e5df7d88e5318e1c19",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/blackbox.rb",
+      "path": "recipes/blackbox.rb",
+      "checksum": "73a4918e44a6bb07998ee698907cdab9",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/haproxy.rb",
+      "path": "recipes/haproxy.rb",
+      "checksum": "cfd4b3eb37fdb6c6a1afa34dec5fa097",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/node.rb",
+      "path": "recipes/node.rb",
+      "checksum": "317971ce50dd8df7b5ae135ec9be4496",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/process.rb",
+      "path": "recipes/process.rb",
+      "checksum": "e533ff4aa9ee52e9dc3aaa2267213f7b",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/rabbitmq.rb",
+      "path": "recipes/rabbitmq.rb",
+      "checksum": "5653126858542a9361864fc2922de142",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/snmp.rb",
+      "path": "recipes/snmp.rb",
+      "checksum": "d1ecaa15cb7a52e9eca7af1fa0fe9553",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/statsd.rb",
+      "path": "recipes/statsd.rb",
+      "checksum": "aa70e94d96790100b676d1769bbf152d",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/varnish.rb",
+      "path": "recipes/varnish.rb",
+      "checksum": "86613160201ac12f77b4eb6d775d0f58",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/wmi.rb",
+      "path": "recipes/wmi.rb",
+      "checksum": "87ade13934549825eaa28700e201fc7f",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/apache.rb",
+      "path": "resources/apache.rb",
+      "checksum": "4cccb63414a8c97c0a1b10798ee1ee53",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/blackbox.rb",
+      "path": "resources/blackbox.rb",
+      "checksum": "019b37faf90ba068cea3683c2d183be6",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/consul.rb",
+      "path": "resources/consul.rb",
+      "checksum": "0ea6c4412350d4993267db524122ee3c",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/elasticsearch.rb",
+      "path": "resources/elasticsearch.rb",
+      "checksum": "3eeff64f1c893fc369114c687084c7ba",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/haproxy.rb",
+      "path": "resources/haproxy.rb",
+      "checksum": "3407cf53934560e4f472bec191c0874f",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/mongodb.rb",
+      "path": "resources/mongodb.rb",
+      "checksum": "2c205382834e5923805ceefd44e4097e",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/mysqld.rb",
+      "path": "resources/mysqld.rb",
+      "checksum": "3d0de98314df20cbe407a5b34055e7cc",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/node.rb",
+      "path": "resources/node.rb",
+      "checksum": "9aa0e6e7bcfcd136f0613687228c6ff5",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/postgres.rb",
+      "path": "resources/postgres.rb",
+      "checksum": "96b9d83bae2ac9d2933e06b67eb08f22",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/process.rb",
+      "path": "resources/process.rb",
+      "checksum": "7d3038cd360506ba25b7d4d6c8f3f632",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/rabbitmq.rb",
+      "path": "resources/rabbitmq.rb",
+      "checksum": "c0792d03d28cfc495062686c2949d39e",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/redis.rb",
+      "path": "resources/redis.rb",
+      "checksum": "1f51d1cd2f28bb2e6536f01b4ce5d94c",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/snmp.rb",
+      "path": "resources/snmp.rb",
+      "checksum": "f36e00b2a63d35e8d0f1cd68f52637da",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/statsd.rb",
+      "path": "resources/statsd.rb",
+      "checksum": "7590aad8ae2e47d3d01a542439773324",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/varnish.rb",
+      "path": "resources/varnish.rb",
+      "checksum": "a09d5defa6cd72e7def5c7f7b248fe51",
+      "specificity": "default"
+    },
+    {
+      "name": "resources/wmi.rb",
+      "path": "resources/wmi.rb",
+      "checksum": "d094b3f3923f266b4a13a1ed32b48a82",
+      "specificity": "default"
+    },
+    {
+      "name": "templates/initscript.erb",
+      "path": "templates/default/initscript.erb",
+      "checksum": "add3822fc621c63c265fc50fdf68f92d",
+      "specificity": "default"
+    },
+    {
+      "name": "templates/upstart.conf.erb",
+      "path": "templates/default/upstart.conf.erb",
+      "checksum": "094a9faa76eeb8f78b060cdcdb675764",
+      "specificity": "default"
+    }
+  ],
+  "metadata": {
+    "name": "prometheus_exporters",
+    "description": "Installs / configures Prometheus exporters",
+    "long_description": "",
+    "maintainer": "Evil Martians",
+    "maintainer_email": "surrender@evilmartians.com",
+    "license": "Apache-2.0",
+    "platforms": {
+      "amazon": ">= 0.0.0",
+      "centos": ">= 6.9",
+      "debian": ">= 8.0",
+      "fedora": ">= 28.0",
+      "oracle": ">= 0.0.0",
+      "scientific": ">= 0.0.0",
+      "ubuntu": ">= 16.04",
+      "windows": ">= 0.0.0"
+    },
+    "dependencies": {
+
+    },
+    "providing": {
+      "prometheus_exporters::blackbox": ">= 0.0.0",
+      "prometheus_exporters::haproxy": ">= 0.0.0",
+      "prometheus_exporters::node": ">= 0.0.0",
+      "prometheus_exporters::process": ">= 0.0.0",
+      "prometheus_exporters::rabbitmq": ">= 0.0.0",
+      "prometheus_exporters::snmp": ">= 0.0.0",
+      "prometheus_exporters::statsd": ">= 0.0.0",
+      "prometheus_exporters::varnish": ">= 0.0.0",
+      "prometheus_exporters::wmi": ">= 0.0.0"
+    },
+    "recipes": {
+      "prometheus_exporters::blackbox": "",
+      "prometheus_exporters::haproxy": "",
+      "prometheus_exporters::node": "",
+      "prometheus_exporters::process": "",
+      "prometheus_exporters::rabbitmq": "",
+      "prometheus_exporters::snmp": "",
+      "prometheus_exporters::statsd": "",
+      "prometheus_exporters::varnish": "",
+      "prometheus_exporters::wmi": ""
+    },
+    "version": "0.17.2",
+    "source_url": "https://github.com/evilmartians/chef-prometheus-exporters/",
+    "issues_url": "https://github.com/evilmartians/chef-prometheus-exporters/issues",
+    "privacy": false,
+    "chef_versions": [
+
+    ],
+    "ohai_versions": [
+
+    ],
+    "gems": [
+
+    ],
+    "eager_load_libraries": true
+  },
+  "version": "0.17.2",
+  "name": "prometheus_exporters-0.17.2",
+  "cookbook_name": "prometheus_exporters",
+  "frozen?": false,
+  "chef_type": "cookbook_version",
+  "json_class": "Chef::CookbookVersion"
+}
