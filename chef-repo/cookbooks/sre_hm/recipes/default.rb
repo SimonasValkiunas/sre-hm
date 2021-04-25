@@ -27,7 +27,6 @@
 # check if recipe has started, remove later
 
 node.override['prometheus-platform']['components']['prometheus']['install?'] = true
-node.override['prometheus-platform']['components']['prometheus']['install?'] = true
 
 listen_ip = '127.0.0.1'
 
@@ -36,7 +35,15 @@ node_exporter 'main' do
   action [:enable, :start]
 end
 
-
+node.override['prometheus-platform']'components']['prometheus']['config']['scrape_configs'] =     {
+  'job_name' => 'node',
+  'scrape_interval' => '15s',
+  'static_configs' => {
+    'index_1' => {
+      'targets' => ['localhost:9100']
+    }
+  }
+}
 
 include_recipe 'prometheus-platform::default'
 include_recipe 'prometheus_exporters::node'
