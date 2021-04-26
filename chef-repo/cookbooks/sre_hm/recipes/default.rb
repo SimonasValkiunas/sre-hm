@@ -1043,7 +1043,7 @@ file '/etc/grafana/provisioning/dashboards/node-dash.json' do
       ]
     },
     "timezone": "browser",
-    "title": "Node Exporter Quickstart and Dashboard",
+    "title": "node-dash",
     "version": 0,
     "description": "A quickstart to setup Prometheus Node Exporter with preconfigured dashboards, alerting rules, and recording rules."
   }'
@@ -1057,5 +1057,4 @@ grafana_dashboard 'node-dash' do
   dashboard(
     path: '/etc/grafana/provisioning/dashboards/node-dash.json'
   )
-  action :create
 end
