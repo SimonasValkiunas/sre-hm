@@ -1,6 +1,6 @@
 # Cookbook:: sre_academy
 # Recipe:: node-exporter
-# Recipe to install and configure node-exporter
+# Recipe:: to install and configure node-exporter
 
 # configures node exported to listen on 9100 port
 listen_ip = '127.0.0.1'

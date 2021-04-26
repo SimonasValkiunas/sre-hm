@@ -1,9 +1,6 @@
 name "Policyfile"
 
 default_source :supermarket, "https://supermarket.chef.io"
-#  do |s|
-#     s.preferred_for [ "prometheus_exporters", "prometheus-platform", "grafana"]
-#   end
 
 cookbook 'prometheus_exporters', '~> 0.17.2', :supermarket
 cookbook 'prometheus-platform', '~> 2.2.0', :supermarket

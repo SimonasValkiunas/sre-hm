@@ -1,7 +1,6 @@
 # Cookbook:: sre_academy
 # Recipe:: grafana
-# Recipe to install and configure Grafana
-
+# Recipe:: to install and configure Grafana
 
 # install and configure grafana
 grafana_install 'grafana'

@@ -24,7 +24,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-
 include_recipe 'sre_hm::prometheus'
 include_recipe 'sre_hm::node-exporter'
 include_recipe 'sre_hm::grafana'

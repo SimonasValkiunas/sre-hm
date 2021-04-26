@@ -1,6 +1,6 @@
 # Cookbook:: sre_academy
 # Recipe:: prometheus
-# Recipe to install and configure Prometheus
+# Recipe:: to install and configure Prometheus
 
 # install prometheus
 node.override['prometheus-platform']['components']['prometheus']['install?'] = true

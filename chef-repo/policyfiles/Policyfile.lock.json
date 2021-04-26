@@ -1,5 +1,5 @@
 {
-  "revision_id": "2c5216f19483238598eef6bc1e99588a375ed7cfc39e89c440abf8f1df838858",
+  "revision_id": "17a619fa0e059fbe37cff8f139ede846b3aca6c68f25988aa2b6fbe11ffbd039",
   "name": "Policyfile",
   "run_list": [
     "recipe[sre_hm::default]"
@@ -76,14 +76,14 @@
     },
     "sre_hm": {
       "version": "1.0.0",
-      "identifier": "59c6973b59d36d23abdb228df2b48a749997b032",
-      "dotted_decimal_identifier": "25269625765352301.10040581850788532.152233397694514",
+      "identifier": "abb35b3ed4cc3b9154e0b36233ddd0aa49e4b7c5",
+      "dotted_decimal_identifier": "48329425495051323.40907195682010077.229429802743749",
       "source": "../cookbooks/sre_hm",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/SimonasValkiunas/sre-hm",
-        "revision": "1edd8de3e50ba8e4630a687fdd993bc4e185a8ad",
+        "revision": "0d70adb5fec94cd92e10abc908e9a7c95e007fbe",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
