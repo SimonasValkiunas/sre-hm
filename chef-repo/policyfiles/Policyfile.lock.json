@@ -83,7 +83,7 @@
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/SimonasValkiunas/sre-hm",
-        "revision": "ad49fbe6110ab8e62e30060f4a444563d77ce8ee",
+        "revision": "1edd8de3e50ba8e4630a687fdd993bc4e185a8ad",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
