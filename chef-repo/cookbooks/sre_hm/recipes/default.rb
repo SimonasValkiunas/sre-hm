@@ -154,7 +154,7 @@ grafana_datasource 'Prometheus' do
 end
 
 # create dashboard file
-file '/opt/grafana/dashboards/node-dash.json' do
+file '/etc/grafana/provisioning/dashboards/node-dash.json' do
   content '{
     "__inputs": [],
     "__requires": [
@@ -1055,6 +1055,6 @@ end
 # load dashboard
 grafana_dashboard 'node-dash' do
   dashboard(
-    path: '/opt/grafana/dashboards/node-dash.json'
+    path: '/etc/grafana/provisioning/dashboards/node-dash.json'
   )
 end
