@@ -19,6 +19,8 @@ platforms:
 
 suites:
   - name: default
+    provisioner:
+      policyfile_path: ~/sre-hm/chef-repo/policyfiles/Policyfile.rb
     run_list:
     - recipe[sre_hm::default]
     verifier:

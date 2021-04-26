@@ -3,7 +3,7 @@
 
 # create recording rules file
 file '/opt/prometheus-2.25.2/rules/node_exporter_recording_rules.yml' do
-    content '"groups":
+  content '"groups":
     - "name": "node-exporter.rules"
       "rules":
       - "expr": |
@@ -61,7 +61,7 @@ file '/opt/prometheus-2.25.2/rules/node_exporter_recording_rules.yml' do
             rate(node_network_transmit_drop_total{job="node", device!="lo"}[1m])
           )
         "record": "instance:node_network_transmit_drop_excluding_lo:rate1m"'
-    mode '0755'
-    owner 'prometheus'
-    group 'prometheus'
-  end
+  mode '0755'
+  owner 'prometheus'
+  group 'prometheus'
+end

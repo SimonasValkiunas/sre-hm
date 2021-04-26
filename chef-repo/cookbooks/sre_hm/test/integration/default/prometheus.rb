@@ -1,4 +1,4 @@
-# InSpec test for recipe sre_academy::prometheus
+# InSpec test for recipe sre_hm::prometheus
 
 # The InSpec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec/resources/

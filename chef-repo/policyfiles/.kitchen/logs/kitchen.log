@@ -1,0 +1,29 @@
+I, [2021-04-26T17:17:53.557055 #622079]  INFO -- Kitchen: -----> Starting Test Kitchen (v2.11.2)
+E, [2021-04-26T17:17:53.557223 #622079] ERROR -- Kitchen: ------Exception-------
+E, [2021-04-26T17:17:53.557247 #622079] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2021-04-26T17:17:53.557259 #622079] ERROR -- Kitchen: Message: Kitchen YAML file /home/simonas/sre-hm/chef-repo/policyfiles/kitchen.yml does not exist.
+E, [2021-04-26T17:17:53.557267 #622079] ERROR -- Kitchen: ----------------------
+E, [2021-04-26T17:17:53.557275 #622079] ERROR -- Kitchen: ------Backtrace-------
+E, [2021-04-26T17:17:53.557282 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/loader/yaml.rb:65:in `read'
+E, [2021-04-26T17:17:53.557289 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/config.rb:153:in `data'
+E, [2021-04-26T17:17:53.557296 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/config.rb:131:in `suites'
+E, [2021-04-26T17:17:53.557303 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/config.rb:183:in `filter_instances'
+E, [2021-04-26T17:17:53.557310 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/config.rb:142:in `build_instances'
+E, [2021-04-26T17:17:53.557317 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/config.rb:116:in `instances'
+E, [2021-04-26T17:17:53.557324 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/command.rb:109:in `filtered_instances'
+E, [2021-04-26T17:17:53.557331 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/command.rb:139:in `parse_subcommand'
+E, [2021-04-26T17:17:53.557338 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/command/test.rb:39:in `block in call'
+E, [2021-04-26T17:17:53.557345 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2021-04-26T17:17:53.557352 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/command/test.rb:37:in `call'
+E, [2021-04-26T17:17:53.557359 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/cli.rb:52:in `perform'
+E, [2021-04-26T17:17:53.557366 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/cli.rb:250:in `test'
+E, [2021-04-26T17:17:53.557373 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib/thor/command.rb:27:in `run'
+E, [2021-04-26T17:17:53.557380 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib/thor/invocation.rb:127:in `invoke_command'
+E, [2021-04-26T17:17:53.557387 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib/thor.rb:392:in `dispatch'
+E, [2021-04-26T17:17:53.557394 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib/thor/base.rb:485:in `start'
+E, [2021-04-26T17:17:53.557401 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/bin/kitchen:11:in `block in <top (required)>'
+E, [2021-04-26T17:17:53.557426 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/errors.rb:170:in `with_friendly_errors'
+E, [2021-04-26T17:17:53.557436 #622079] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/bin/kitchen:11:in `<top (required)>'
+E, [2021-04-26T17:17:53.557444 #622079] ERROR -- Kitchen: /usr/bin/kitchen:354:in `load'
+E, [2021-04-26T17:17:53.557455 #622079] ERROR -- Kitchen: /usr/bin/kitchen:354:in `<main>'
+E, [2021-04-26T17:17:53.557463 #622079] ERROR -- Kitchen: ----End Backtrace-----

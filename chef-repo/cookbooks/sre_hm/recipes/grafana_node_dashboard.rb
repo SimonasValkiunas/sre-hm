@@ -3,7 +3,7 @@
 
 # create dashboard file
 file '/etc/grafana/provisioning/dashboards/node-dash.json' do
-    content '{
+  content '{
       "__inputs": [],
       "__requires": [
         {
@@ -895,7 +895,7 @@ file '/etc/grafana/provisioning/dashboards/node-dash.json' do
       "version": 0,
       "description": "A quickstart to setup Prometheus Node Exporter with preconfigured dashboards, alerting rules, and recording rules."
     }'
-    mode '0755'
-    owner 'grafana'
-    group 'grafana'
-  end
+  mode '0755'
+  owner 'grafana'
+  group 'grafana'
+end
