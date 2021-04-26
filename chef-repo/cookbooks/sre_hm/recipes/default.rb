@@ -36,6 +36,24 @@ node_exporter 'main' do
   action [:enable, :start]
 end
 
+# configure recording rules
+node.override[cookbook_name]['components']['prometheus']['rules'] = {
+  'alerting' => [],
+  'recording' => [
+    "instance:node_num_cpu:sum",
+    "instance:node_cpu_utilisation:rate1m",
+    "instance:node_load1_per_cpu:ratio",
+    "instance:node_memory_utilisation:ratio",
+    "instance:node_vmstat_pgmajfault:rate1m",
+    "instance_device:node_disk_io_time_seconds:rate1m",
+    "instance_device:node_disk_io_time_weighted_seconds:rate1m",
+    "instance:node_network_receive_bytes_excluding_lo:rate1m",
+    "instance:node_network_transmit_bytes_excluding_lo:rate1m",
+    "instance:node_network_receive_drop_excluding_lo:rate1m",
+    "instance:node_network_transmit_drop_excluding_lo:rate1m"
+  ]
+}
+
 # configures prometheus to scrape data from node exporter
 node.override['prometheus-platform']['components']['prometheus']['config']['scrape_configs'] = {
   'index_1' =>
@@ -88,20 +106,4 @@ grafana_datasource 'Prometheus' do
   action :create
 end
 
-# configure recording rules
-node.override[cookbook_name]['components']['prometheus']['rules'] = {
-  'alerting' => [],
-  'recording' => [
-    "instance:node_num_cpu:sum",
-    "instance:node_cpu_utilisation:rate1m",
-    "instance:node_load1_per_cpu:ratio",
-    "instance:node_memory_utilisation:ratio",
-    "instance:node_vmstat_pgmajfault:rate1m",
-    "instance_device:node_disk_io_time_seconds:rate1m",
-    "instance_device:node_disk_io_time_weighted_seconds:rate1m",
-    "instance:node_network_receive_bytes_excluding_lo:rate1m",
-    "instance:node_network_transmit_bytes_excluding_lo:rate1m",
-    "instance:node_network_receive_drop_excluding_lo:rate1m",
-    "instance:node_network_transmit_drop_excluding_lo:rate1m"
-  ]
-}
+
