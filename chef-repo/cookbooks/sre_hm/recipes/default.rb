@@ -54,3 +54,16 @@ node.override['prometheus-platform']['components']['prometheus']['config']['scra
 include_recipe 'prometheus-platform::default'
 include_recipe 'prometheus_exporters::node'
 
+# install and configure grafana
+grafana_install 'grafana'
+
+# grafana_plugin 'node-exporter-dashboard' do
+#   action :install
+#   plugin_url 'https://github.com/prometheus/node_exporter/releases/download/v1.1.1/node_exporter-1.1.1.linux-amd64.tar.gz'
+# end
+
+service 'grafana-server' do
+  action [:enable, :start]
+  subscribes :restart, ['template[/etc/grafana/grafana.ini]', 'template[/etc/grafana/ldap.toml]'], :delayed
+end
+
