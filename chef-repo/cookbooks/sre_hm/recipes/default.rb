@@ -1057,4 +1057,5 @@ grafana_dashboard 'node-dash' do
   dashboard(
     path: '/etc/grafana/provisioning/dashboards/node-dash.json'
   )
+  action :create
 end
