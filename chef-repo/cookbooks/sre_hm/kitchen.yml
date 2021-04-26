@@ -20,7 +20,7 @@ platforms:
 suites:
   - name: default
     run_list:
-    - recipe[sre_academy::default]
+    - recipe[sre_hm::default]
     verifier:
       inspec_tests:
         - test/integration/default
