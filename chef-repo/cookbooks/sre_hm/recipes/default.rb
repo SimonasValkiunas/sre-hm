@@ -54,7 +54,7 @@ end
 #   ]
 # }
 
-file '/opt/prometheus-2.25.2/rules/node_exporter_recording_rules' do
+file '/opt/prometheus-2.25.2/rules/node_exporter_recording_rules.yml' do
   content '"groups":
   - "name": "node-exporter.rules"
     "rules":
