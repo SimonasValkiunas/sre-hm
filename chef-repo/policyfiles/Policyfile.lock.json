@@ -1,5 +1,5 @@
 {
-  "revision_id": "343affaf5c7b4c5a7d73057f79fa2596515b76919b7a4d724d7cf72557eef970",
+  "revision_id": "55dce93cb32c159c18e2414b7c0dad74bd22baf076012f2178312a2455589dfd",
   "name": "Policyfile",
   "run_list": [
     "recipe[sre_hm::default]"
@@ -30,26 +30,67 @@
         "version": "1.6.0"
       }
     },
+    "grafana": {
+      "version": "9.6.0",
+      "identifier": "0db9acdd0ca1f2e2d531973f5a74bc83d3824e2c",
+      "dotted_decimal_identifier": "3863326791344626.63847753704233588.207274375269932",
+      "source": "../cookbooks/grafana",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/SimonasValkiunas/sre-hm",
+        "revision": "93bddec329e15ff0301fc65eada675e1c4fd64d5",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/main",
+          "origin/main"
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/grafana"
+      }
+    },
     "prometheus-platform": {
       "version": "2.2.0",
       "identifier": "fd5b99bef59480bee8477f980c468afbcbbbeed3",
       "dotted_decimal_identifier": "71313884999685248.53735639356017734.152814059515603",
-      "cache_key": "prometheus-platform-2.2.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/prometheus-platform/versions/2.2.0/download",
+      "source": "../cookbooks/prometheus-platform",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/SimonasValkiunas/sre-hm",
+        "revision": "93bddec329e15ff0301fc65eada675e1c4fd64d5",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/main",
+          "origin/main"
+        ]
+      },
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/prometheus-platform/versions/2.2.0/download",
-        "version": "2.2.0"
+        "path": "../cookbooks/prometheus-platform"
       }
     },
     "prometheus_exporters": {
       "version": "0.17.2",
-      "identifier": "a6f0c28a41828dceafaee74422940a018a8b8b85",
-      "dotted_decimal_identifier": "46989564467839629.58177010941567636.11001735646085",
-      "cache_key": "prometheus_exporters-0.17.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/prometheus_exporters/versions/0.17.2/download",
+      "identifier": "413226b7c75c5a61ccf5787486975abfee4ca1cf",
+      "dotted_decimal_identifier": "18351015359634522.27528427400890007.99780383252943",
+      "source": "../cookbooks/prometheus_exporters",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/SimonasValkiunas/sre-hm",
+        "revision": "93bddec329e15ff0301fc65eada675e1c4fd64d5",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/main",
+          "origin/main"
+        ]
+      },
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/prometheus_exporters/versions/0.17.2/download",
-        "version": "0.17.2"
+        "path": "../cookbooks/prometheus_exporters"
       }
     },
     "seven_zip": {
@@ -65,19 +106,19 @@
     },
     "sre_hm": {
       "version": "1.0.0",
-      "identifier": "b2216c65bc22917375d46b04ca4fb954ddea53f7",
-      "dotted_decimal_identifier": "50139295301509777.32499177510718031.203774151513079",
+      "identifier": "ed349ee77e4360e54afcf75fec1b6137461f733b",
+      "dotted_decimal_identifier": "66767426573714272.64540220009212955.106890027561787",
       "source": "../cookbooks/sre_hm",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "https://github.com/sre-hw/sre-hw-SimonasValkiunas",
-        "revision": "0bc47deb59c6883d675f3814c360a313b0acd281",
+        "remote": "https://github.com/SimonasValkiunas/sre-hm",
+        "revision": "93bddec329e15ff0301fc65eada675e1c4fd64d5",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
-          "origin/master"
+          "origin/HEAD -> origin/main",
+          "origin/main"
         ]
       },
       "source_options": {
@@ -113,12 +154,16 @@
         "= 1.6.0"
       ],
       [
+        "grafana",
+        ">= 8.8.0"
+      ],
+      [
         "prometheus-platform",
-        "= 2.2.0"
+        "~> 2.2.0"
       ],
       [
         "prometheus_exporters",
-        "= 0.17.2"
+        "~> 0.17.2"
       ],
       [
         "seven_zip",
@@ -141,6 +186,9 @@
         ]
       ],
       "cluster-search (1.6.0)": [
+
+      ],
+      "grafana (9.6.0)": [
 
       ],
       "prometheus-platform (2.2.0)": [
@@ -166,6 +214,10 @@
         [
           "prometheus_exporters",
           ">= 0.17.2"
+        ],
+        [
+          "grafana",
+          ">= 8.8.0"
         ],
         [
           "prometheus-platform",

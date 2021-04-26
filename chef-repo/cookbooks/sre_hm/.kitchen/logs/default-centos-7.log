@@ -1,0 +1,162 @@
+I, [2021-04-26T16:59:12.919085 #615173]  INFO -- default-centos-7: -----> Cleaning up any prior instances of <default-centos-7>
+I, [2021-04-26T16:59:12.919361 #615173]  INFO -- default-centos-7: -----> Destroying <default-centos-7>...
+I, [2021-04-26T16:59:12.919796 #615173]  INFO -- default-centos-7: Finished destroying <default-centos-7> (0m0.00s).
+I, [2021-04-26T16:59:12.919922 #615173]  INFO -- default-centos-7: -----> Testing <default-centos-7>
+I, [2021-04-26T16:59:12.919978 #615173]  INFO -- default-centos-7: -----> Creating <default-centos-7>...
+I, [2021-04-26T16:59:13.647785 #615173]  INFO -- default-centos-7: /home/simonas/sre-hm/chef-repo/cookbooks/sre_hm/.kitchen/kitchen-vagrant/default-centos-7/Vagrantfile:5: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
+I, [2021-04-26T16:59:13.647845 #615173]  INFO -- default-centos-7: /usr/share/rubygems-integration/all/gems/vagrant-2.2.6/plugins/kernel_v2/config/vm.rb:255: warning: The called method `network' is defined here
+I, [2021-04-26T16:59:18.893953 #615173]  INFO -- default-centos-7: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2021-04-26T16:59:19.342337 #615173]  INFO -- default-centos-7: ==> default: Checking if box 'bento/centos-7' version '202103.18.0' is up to date...
+I, [2021-04-26T16:59:19.985866 #615173]  INFO -- default-centos-7: ==> default: Setting the name of the VM: kitchen-sre_hm-default-centos-7-51a5044c-5f05-491c-be17-7311e459f34c
+I, [2021-04-26T16:59:21.067004 #615173]  INFO -- default-centos-7: ==> default: Clearing any previously set network interfaces...
+I, [2021-04-26T16:59:21.156804 #615173]  INFO -- default-centos-7: ==> default: Preparing network interfaces based on configuration...
+I, [2021-04-26T16:59:21.157398 #615173]  INFO -- default-centos-7:     default: Adapter 1: nat
+I, [2021-04-26T16:59:21.243647 #615173]  INFO -- default-centos-7: ==> default: Forwarding ports...
+I, [2021-04-26T16:59:21.332101 #615173]  INFO -- default-centos-7:     default: 9090 (guest) => 9090 (host) (adapter 1)
+I, [2021-04-26T16:59:21.332458 #615173]  INFO -- default-centos-7:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2021-04-26T16:59:21.655705 #615173]  INFO -- default-centos-7: ==> default: Running 'pre-boot' VM customizations...
+I, [2021-04-26T16:59:21.708762 #615173]  INFO -- default-centos-7: ==> default: Booting VM...
+I, [2021-04-26T16:59:22.024784 #615173]  INFO -- default-centos-7: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2021-04-26T16:59:22.392576 #615173]  INFO -- default-centos-7:     default: SSH address: 127.0.0.1:2222
+I, [2021-04-26T16:59:22.394308 #615173]  INFO -- default-centos-7:     default: SSH username: vagrant
+I, [2021-04-26T16:59:22.394727 #615173]  INFO -- default-centos-7:     default: SSH auth method: private key
+I, [2021-04-26T16:59:38.340921 #615173]  INFO -- default-centos-7:     default: 
+I, [2021-04-26T16:59:38.341113 #615173]  INFO -- default-centos-7:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2021-04-26T16:59:38.341275 #615173]  INFO -- default-centos-7:     default: this with a newly generated keypair for better security.
+I, [2021-04-26T16:59:40.173676 #615173]  INFO -- default-centos-7:     default: 
+I, [2021-04-26T16:59:40.173747 #615173]  INFO -- default-centos-7:     default: Inserting generated public key within guest...
+I, [2021-04-26T16:59:40.467096 #615173]  INFO -- default-centos-7:     default: Removing insecure key from the guest if it's present...
+I, [2021-04-26T16:59:40.707543 #615173]  INFO -- default-centos-7:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2021-04-26T16:59:42.029798 #615173]  INFO -- default-centos-7: ==> default: Machine booted and ready!
+I, [2021-04-26T16:59:42.030907 #615173]  INFO -- default-centos-7: ==> default: Checking for guest additions in VM...
+I, [2021-04-26T16:59:42.080452 #615173]  INFO -- default-centos-7: ==> default: Setting hostname...
+I, [2021-04-26T16:59:43.047471 #615173]  INFO -- default-centos-7: ==> default: Mounting shared folders...
+I, [2021-04-26T16:59:43.047596 #615173]  INFO -- default-centos-7:     default: /tmp/omnibus/cache => /home/simonas/.kitchen/cache
+I, [2021-04-26T16:59:43.834587 #615173]  INFO -- default-centos-7: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2021-04-26T16:59:45.792800 #615173]  INFO -- default-centos-7: [SSH] Established
+I, [2021-04-26T16:59:45.793206 #615173]  INFO -- default-centos-7: Vagrant instance <default-centos-7> created.
+I, [2021-04-26T16:59:45.793746 #615173]  INFO -- default-centos-7: Finished creating <default-centos-7> (0m32.87s).
+I, [2021-04-26T16:59:45.793876 #615173]  INFO -- default-centos-7: -----> Converging <default-centos-7>...
+I, [2021-04-26T16:59:45.855838 #615173]  INFO -- default-centos-7: Preparing files for transfer
+I, [2021-04-26T16:59:45.855960 #615173]  INFO -- default-centos-7: Preparing dna.json
+I, [2021-04-26T16:59:45.856185 #615173]  INFO -- default-centos-7: Preparing current project directory as a cookbook
+I, [2021-04-26T16:59:45.858367 #615173]  INFO -- default-centos-7: Removing non-cookbook files before transfer
+I, [2021-04-26T16:59:45.859149 #615173]  INFO -- default-centos-7: Preparing validation.pem
+I, [2021-04-26T16:59:45.859440 #615173]  INFO -- default-centos-7: Preparing client.rb
+I, [2021-04-26T16:59:45.922655 #615173]  INFO -- default-centos-7: el 7 x86_64
+I, [2021-04-26T16:59:45.922712 #615173]  INFO -- default-centos-7: Getting information for chef stable 14 for el...
+I, [2021-04-26T16:59:45.922728 #615173]  INFO -- default-centos-7: downloading https://omnitruck.chef.io/stable/chef/metadata?v=14&p=el&pv=7&m=x86_64
+I, [2021-04-26T16:59:45.922740 #615173]  INFO -- default-centos-7:   to file /tmp/kitchen/metadata.txt
+I, [2021-04-26T16:59:45.923410 #615173]  INFO -- default-centos-7: trying curl...
+I, [2021-04-26T16:59:47.114652 #615173]  INFO -- default-centos-7: sha1	0f10d3ee5e2becfb2eb28af8ace5b12c4a535fa3
+I, [2021-04-26T16:59:47.114802 #615173]  INFO -- default-centos-7: sha256	10fac8b4f3382dd990d0474fcf8acbaef9fd935f9f6aec1a83f0ec5f124a3cad
+I, [2021-04-26T16:59:47.114869 #615173]  INFO -- default-centos-7: url	https://packages.chef.io/files/stable/chef/14.15.6/el/7/chef-14.15.6-1.el7.x86_64.rpm
+I, [2021-04-26T16:59:47.114918 #615173]  INFO -- default-centos-7: version	14.15.6
+I, [2021-04-26T16:59:47.122481 #615173]  INFO -- default-centos-7: downloaded metadata file looks valid...
+I, [2021-04-26T16:59:47.142419 #615173]  INFO -- default-centos-7: downloading https://packages.chef.io/files/stable/chef/14.15.6/el/7/chef-14.15.6-1.el7.x86_64.rpm
+I, [2021-04-26T16:59:47.142482 #615173]  INFO -- default-centos-7:   to file /tmp/omnibus/cache/chef-14.15.6-1.el7.x86_64.rpm
+I, [2021-04-26T16:59:47.143026 #615173]  INFO -- default-centos-7: trying curl...
+I, [2021-04-26T16:59:53.841188 #615173]  INFO -- default-centos-7: Comparing checksum with sha256sum...
+I, [2021-04-26T16:59:53.953373 #615173]  INFO -- default-centos-7: Installing chef 14
+I, [2021-04-26T16:59:53.953417 #615173]  INFO -- default-centos-7: installing with rpm...
+I, [2021-04-26T16:59:53.999602 #615173]  INFO -- default-centos-7: warning: /tmp/omnibus/cache/chef-14.15.6-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2021-04-26T16:59:54.455453 #615173]  INFO -- default-centos-7: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2021-04-26T16:59:54.493790 #615173]  INFO -- default-centos-7: Updating / installing...
+I, [2021-04-26T16:59:59.153443 #615173]  INFO -- default-centos-7:    1:chef-14.15.6-1.el7                                                 (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2021-04-26T16:59:59.474537 #615173]  INFO -- default-centos-7: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2021-04-26T16:59:59.514792 #615173]  INFO -- default-centos-7: Transferring files to <default-centos-7>
+I, [2021-04-26T17:00:00.557803 #615173]  INFO -- default-centos-7: Starting Chef Client, version 14.15.6
+I, [2021-04-26T17:00:01.960651 #615173]  INFO -- default-centos-7: Creating a new client identity for default-centos-7 using the validator key.
+I, [2021-04-26T17:00:02.051591 #615173]  INFO -- default-centos-7: resolving cookbooks for run list: ["sre_hm::default"]
+I, [2021-04-26T17:00:02.063438 #615173]  INFO -- default-centos-7: 
+I, [2021-04-26T17:00:02.063500 #615173]  INFO -- default-centos-7: ================================================================================
+I, [2021-04-26T17:00:02.063522 #615173]  INFO -- default-centos-7: Error Resolving Cookbooks for Run List:
+I, [2021-04-26T17:00:02.063539 #615173]  INFO -- default-centos-7: ================================================================================
+I, [2021-04-26T17:00:02.063555 #615173]  INFO -- default-centos-7: 
+I, [2021-04-26T17:00:02.063571 #615173]  INFO -- default-centos-7: Missing Cookbooks:
+I, [2021-04-26T17:00:02.063605 #615173]  INFO -- default-centos-7: ------------------
+I, [2021-04-26T17:00:02.063621 #615173]  INFO -- default-centos-7: No such cookbook: prometheus_exporters
+I, [2021-04-26T17:00:02.063654 #615173]  INFO -- default-centos-7: 
+I, [2021-04-26T17:00:02.063670 #615173]  INFO -- default-centos-7: Expanded Run List:
+I, [2021-04-26T17:00:02.063684 #615173]  INFO -- default-centos-7: ------------------
+I, [2021-04-26T17:00:02.063697 #615173]  INFO -- default-centos-7: * sre_hm::default
+I, [2021-04-26T17:00:02.063710 #615173]  INFO -- default-centos-7: 
+I, [2021-04-26T17:00:02.063739 #615173]  INFO -- default-centos-7: System Info:
+I, [2021-04-26T17:00:02.063753 #615173]  INFO -- default-centos-7: ------------
+I, [2021-04-26T17:00:02.063767 #615173]  INFO -- default-centos-7: chef_version=14.15.6
+I, [2021-04-26T17:00:02.063781 #615173]  INFO -- default-centos-7: platform=centos
+I, [2021-04-26T17:00:02.063794 #615173]  INFO -- default-centos-7: platform_version=7.9.2009
+I, [2021-04-26T17:00:02.063808 #615173]  INFO -- default-centos-7: ruby=ruby 2.5.8p224 (2020-03-31 revision 67882) [x86_64-linux]
+I, [2021-04-26T17:00:02.063822 #615173]  INFO -- default-centos-7: program_name=/opt/chef/bin/chef-client
+I, [2021-04-26T17:00:02.063836 #615173]  INFO -- default-centos-7: executable=/opt/chef/bin/chef-client
+I, [2021-04-26T17:00:02.063859 #615173]  INFO -- default-centos-7: 
+I, [2021-04-26T17:00:02.063873 #615173]  INFO -- default-centos-7: 
+I, [2021-04-26T17:00:02.063887 #615173]  INFO -- default-centos-7: Running handlers:
+I, [2021-04-26T17:00:02.063901 #615173]  INFO -- default-centos-7: [2021-04-26T14:00:02+00:00] ERROR: Running exception handlers
+I, [2021-04-26T17:00:02.063915 #615173]  INFO -- default-centos-7: Running handlers complete
+I, [2021-04-26T17:00:02.063929 #615173]  INFO -- default-centos-7: [2021-04-26T14:00:02+00:00] ERROR: Exception handlers complete
+I, [2021-04-26T17:00:02.063953 #615173]  INFO -- default-centos-7: Chef Client failed. 0 resources updated in 01 seconds
+I, [2021-04-26T17:00:02.063968 #615173]  INFO -- default-centos-7: [2021-04-26T14:00:02+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2021-04-26T17:00:02.063983 #615173]  INFO -- default-centos-7: [2021-04-26T14:00:02+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2021-04-26T17:00:02.063997 #615173]  INFO -- default-centos-7: [2021-04-26T14:00:02+00:00] FATAL: Net::HTTPServerException: 412 "Precondition Failed"
+E, [2021-04-26T17:00:02.069354 #615173] ERROR -- default-centos-7: Converge failed on instance <default-centos-7>.
+E, [2021-04-26T17:00:02.069446 #615173] ERROR -- default-centos-7: ------Exception-------
+E, [2021-04-26T17:00:02.069461 #615173] ERROR -- default-centos-7: Class: Kitchen::ActionFailed
+E, [2021-04-26T17:00:02.069469 #615173] ERROR -- default-centos-7: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2021-04-26T17:00:02.069477 #615173] ERROR -- default-centos-7: ----------------------
+E, [2021-04-26T17:00:02.069484 #615173] ERROR -- default-centos-7: ------Backtrace-------
+E, [2021-04-26T17:00:02.069491 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/provisioner/base.rb:100:in `rescue in call'
+E, [2021-04-26T17:00:02.069499 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/provisioner/base.rb:99:in `call'
+E, [2021-04-26T17:00:02.069506 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2021-04-26T17:00:02.069516 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2021-04-26T17:00:02.069544 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2021-04-26T17:00:02.069557 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2021-04-26T17:00:02.069568 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:523:in `action'
+E, [2021-04-26T17:00:02.069578 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2021-04-26T17:00:02.069586 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2021-04-26T17:00:02.069598 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2021-04-26T17:00:02.069621 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2021-04-26T17:00:02.069629 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:390:in `each'
+E, [2021-04-26T17:00:02.069636 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2021-04-26T17:00:02.069644 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:161:in `verify'
+E, [2021-04-26T17:00:02.069656 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:190:in `block in test'
+E, [2021-04-26T17:00:02.069664 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2021-04-26T17:00:02.069672 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:186:in `test'
+E, [2021-04-26T17:00:02.069690 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2021-04-26T17:00:02.069698 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2021-04-26T17:00:02.069705 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2021-04-26T17:00:02.069712 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2021-04-26T17:00:02.069719 #615173] ERROR -- default-centos-7: ----End Backtrace-----
+E, [2021-04-26T17:00:02.069726 #615173] ERROR -- default-centos-7: ---Nested Exception---
+E, [2021-04-26T17:00:02.069737 #615173] ERROR -- default-centos-7: Class: Kitchen::Transport::SshFailed
+E, [2021-04-26T17:00:02.069747 #615173] ERROR -- default-centos-7: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2021-04-26T17:00:02.069756 #615173] ERROR -- default-centos-7: ----------------------
+E, [2021-04-26T17:00:02.069763 #615173] ERROR -- default-centos-7: ------Backtrace-------
+E, [2021-04-26T17:00:02.069770 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/provisioner/base.rb:100:in `rescue in call'
+E, [2021-04-26T17:00:02.069778 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/provisioner/base.rb:99:in `call'
+E, [2021-04-26T17:00:02.069790 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2021-04-26T17:00:02.069798 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2021-04-26T17:00:02.069805 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2021-04-26T17:00:02.069813 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2021-04-26T17:00:02.069820 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:523:in `action'
+E, [2021-04-26T17:00:02.069828 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2021-04-26T17:00:02.069835 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2021-04-26T17:00:02.069852 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2021-04-26T17:00:02.069860 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2021-04-26T17:00:02.069870 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:390:in `each'
+E, [2021-04-26T17:00:02.069879 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2021-04-26T17:00:02.069886 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:161:in `verify'
+E, [2021-04-26T17:00:02.069893 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:190:in `block in test'
+E, [2021-04-26T17:00:02.069900 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2021-04-26T17:00:02.069908 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/instance.rb:186:in `test'
+E, [2021-04-26T17:00:02.069917 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2021-04-26T17:00:02.069929 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2021-04-26T17:00:02.069938 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/test-kitchen-2.11.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2021-04-26T17:00:02.069945 #615173] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2021-04-26T17:00:02.069953 #615173] ERROR -- default-centos-7: ----End Backtrace-----
