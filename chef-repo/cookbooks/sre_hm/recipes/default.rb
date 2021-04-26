@@ -57,13 +57,51 @@ include_recipe 'prometheus_exporters::node'
 # install and configure grafana
 grafana_install 'grafana'
 
-# grafana_plugin 'node-exporter-dashboard' do
-#   action :install
-#   plugin_url 'https://github.com/prometheus/node_exporter/releases/download/v1.1.1/node_exporter-1.1.1.linux-amd64.tar.gz'
-# end
-
 service 'grafana-server' do
   action [:enable, :start]
   subscribes :restart, ['template[/etc/grafana/grafana.ini]', 'template[/etc/grafana/ldap.toml]'], :delayed
 end
 
+# create datasource for prometheus
+grafana_datasource 'Prometheus' do
+  datasource(
+    access: "proxy",
+    basicAuth: false,
+    basicAuthPassword: "",
+    basicAuthUser: "",
+    database: "",
+    id: 3,
+    isDefault: true,
+    jsonData: {httpMethod: "POST"},
+    name: "Prometheus",
+    orgId: 1,
+    password: "",
+    readOnly: false,
+    secureJsonFields: {},
+    type: "prometheus",
+    typeLogoUrl: "",
+    url: "http://localhost:9090",
+    user: "",
+    version: 1,
+    withCredentials: false
+  )
+  action :create
+end
+
+# configure recording rules
+node.override[cookbook_name]['components']['prometheus']['rules'] = {
+  'alerting' => [],
+  'recording' => [
+    "instance:node_num_cpu:sum",
+    "instance:node_cpu_utilisation:rate1m",
+    "instance:node_load1_per_cpu:ratio",
+    "instance:node_memory_utilisation:ratio",
+    "instance:node_vmstat_pgmajfault:rate1m",
+    "instance_device:node_disk_io_time_seconds:rate1m",
+    "instance_device:node_disk_io_time_weighted_seconds:rate1m",
+    "instance:node_network_receive_bytes_excluding_lo:rate1m",
+    "instance:node_network_transmit_bytes_excluding_lo:rate1m",
+    "instance:node_network_receive_drop_excluding_lo:rate1m",
+    "instance:node_network_transmit_drop_excluding_lo:rate1m"
+  ]
+}
